@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Colorful Border via Conic Gradient</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffffcf;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: black;
+        }
+
+        .border {
+            height: 40%;
+            width: 40%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #222;
+        }
+
+        @property --angle {
+            syntax: "<angle>";
+            initial-value: 0deg;
+            inherits: false;
+        }
+
+        .border::after,
+        .border::before {
+            content: "";
+            padding: 4px;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            padding: 4px;
+            border-radius: 10px;
+            background: conic-gradient(from var(--angle), red, orange, yellow, green, cyan, blue, violet, transparent 30%);
+            z-index: 1;
+            animation: spin 3s linear infinite;
+        }
+
+        .border::before {
+            filter: blur(1.5rem);
+            opacity: 0.7;
+
+        }
+
+        @keyframes spin {
+            from {
+                --angle: 0deg;
+            }
+
+            to {
+                --angle: 360deg;
+            }
+        }
+
+        .content {
+            height: 100%;
+            width: 100%;
+            padding: 0.5rem 2rem;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            border-radius: 10px;
+            background-color: #333;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="border">
+        <div class="content">
+            This is an experimental practice to recreate a conic-gradient animated border for a container creating a
+            stunning visual effect 🌱👀🌿
+        </div>
+    </section>
+</body>
+
+</html>
