@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Reflect - CSS Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100dvh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Old and non-recommended method */
+        /* img { */
+        /*     height: auto; */
+        /*     width: 200px; */
+        /*     border: 2px solid black; */
+        /*     -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(255, 255, 255, 0.4)); */
+        /* } */
+
+
+        /* Modern and supports more browsers         */
+        .reflect-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .reflect-container img {
+            height: auto;
+            width: 200px;
+            display: block;
+        }
+
+        .reflect-container .reflection {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background: url('https://pngimg.com/uploads/google/google_PNG19644.png') no-repeat center center;
+            background-size: cover;
+            transform: scaleY(-1);
+            mask-image: linear-gradient(transparent, rgba(255, 255, 255, 0.5));
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <img src="https://pngimg.com/uploads/google/google_PNG19644.png" alt="Google"> -->
+
+    <div class="reflect-container">
+        <img src="https://pngimg.com/uploads/google/google_PNG19644.png" alt="Google">
+        <div class="reflection"></div>
+    </div>
+</body>
+
+</html>
