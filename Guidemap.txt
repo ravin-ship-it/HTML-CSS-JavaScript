@@ -1,0 +1,128 @@
+Great! We’ll start with HTML and make sure you fully understand everything before moving on.
+
+
+---
+
+📌 Step 1: HTML – Mastering the Fundamentals
+
+Since you know some tags but not their full usage, we’ll go through important concepts + exercises so you actually apply what you learn.
+
+
+---
+
+📝 1. HTML Structure & Semantic Elements
+
+🔹 What You Need to Know:
+✔ What is Semantic HTML?
+✔ Why should you use <header>, <section>, <article>, etc.?
+✔ How does it improve SEO & Accessibility?
+
+🔍 Example: Bad vs Good HTML
+
+🚫 Bad HTML (Non-Semantic)
+
+<div class="header"></div>
+<div class="content">
+  <div class="post"></div>
+</div>
+<div class="footer"></div>
+
+✅ Good HTML (Semantic)
+
+<header></header>
+<main>
+  <article></article>
+</main>
+<footer></footer>
+
+🔹 Task: Create a basic webpage using only semantic elements (header, nav, section, article, footer).
+
+
+---
+
+📝 2. Forms & Input Elements (Super Important)
+
+🔹 What You Need to Know:
+✔ Input types (text, email, password, number, etc.)
+✔ Form validation (required, minlength, maxlength, pattern)
+✔ Buttons (submit, reset, button)
+
+🔍 Example: Login Form
+
+<form>
+  <label for="email">Email:</label>
+  <input type="email" id="email" required>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" minlength="6" required>
+
+  <button type="submit">Login</button>
+</form>
+
+🔹 Task: Build a registration form with name, email, password, gender (radio buttons), and a submit button.
+
+
+---
+
+📝 3. Tables & Accessibility
+
+🔹 What You Need to Know:
+✔ How to create tables (<table>, <thead>, <tbody>, <tr>, <td>, <th>)
+✔ Table accessibility (scope, aria-label)
+✔ When to use tables vs divs?
+
+🔍 Example: Basic Table
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Raj</td>
+      <td>22</td>
+      <td>Delhi</td>
+    </tr>
+  </tbody>
+</table>
+
+🔹 Task: Create a product pricing table with at least 3 rows and 3 columns.
+
+
+---
+
+📝 4. SEO Basics (Making HTML Search-Engine Friendly)
+
+🔹 What You Need to Know:
+✔ meta tags (title, description, keywords, viewport)
+✔ Open Graph tags (for social media sharing)
+✔ Image SEO (using alt tags)
+
+🔍 Example: SEO-Friendly Page
+
+<head>
+  <title>Best Clothing Brand | Loomed Charm</title>
+  <meta name="description" content="Get premium abayas and hijabs at the best prices.">
+  <meta name="keywords" content="abaya, hijab, modest fashion">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+🔹 Task: Add proper SEO meta tags to your previous tasks.
+
+
+---
+
+📌 Your First Set of Tasks
+
+✅ 1. Create a basic webpage layout using semantic HTML only.
+✅ 2. Make a registration form with proper validation.
+✅ 3. Build a product pricing table using tables.
+✅ 4. Improve your page with SEO meta tags.
+
+Once you complete these, let me know. I’ll review them and we’ll move to CSS next! 🚀
+
+
